@@ -17,7 +17,7 @@ export default function EventCard({ title, image, slug, location, date, time }: 
         alt={title}
         width={410}
         height={300}
-        className="poster"
+        className="poster w-auto h-auto"
       />
       <div className="flex flex-row gap-2">
         <Image src={"/icons/pin.svg"} alt="location" width={14} height={14} />
@@ -32,6 +32,7 @@ export default function EventCard({ title, image, slug, location, date, time }: 
                 alt="location"
                 width={14}
                 height={14}
+                className="w-auto h-auto"
             />
             <p>{date}</p>
               </div>
@@ -41,6 +42,7 @@ export default function EventCard({ title, image, slug, location, date, time }: 
                 alt="location"
                 width={14}
                 height={14}
+                  className="w-auto h-auto"
             />
             <p>{time}</p>
               </div>
@@ -49,4 +51,4 @@ export default function EventCard({ title, image, slug, location, date, time }: 
     </Link>
   );
 }
- 
+  
